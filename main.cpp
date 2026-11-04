@@ -18,6 +18,7 @@ int main() {
             cin >> betrag;
             if (betrag <= kontostand) kontostand -= betrag;
             else cout << "Nicht genug Guthaben\n";
-        }
-    } while (wahl != 0);
+        }else if (wahl == 3) {
+            cout << "Kontostand: " << kontostand << " EUR\n";
+    }
 }
