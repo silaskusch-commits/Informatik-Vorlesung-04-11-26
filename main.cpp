@@ -13,6 +13,11 @@ int main() {
             cout << "Betrag: ";
             cin >> betrag;
             kontostand += betrag;
-        } 
+        } else if (wahl == 2) {
+            cout << "Betrag: ";
+            cin >> betrag;
+            if (betrag <= kontostand) kontostand -= betrag;
+            else cout << "Nicht genug Guthaben\n";
+        }
     } while (wahl != 0);
 }
